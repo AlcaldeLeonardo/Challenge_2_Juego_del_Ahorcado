@@ -1,0 +1,75 @@
+:root {
+    --btnAzul : #0A3871;
+    --colorFondo : #F3F5FC;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    background: var(--colorFondo);
+}
+
+.header__logo {
+    width: 31.09px;
+}
+
+.botonera {
+    margin-top: 20vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.botonera__btn {
+    background: none;
+    width: 232px;
+    margin-top: 25px;;
+    border: 2px solid var(--btnAzul);
+    border-radius: 25px;
+}
+
+.botonera__btn--azul {
+    padding: 15px;
+    background: var(--btnAzul);
+}
+
+.botonera__link {
+    color: var(--btnAzul);
+    font-size: 16px;
+    line-height: 48px;
+    text-decoration: none;
+}
+
+.botonera__btn--azul .botonera__link {
+    color: white;
+}
+
+
+
+
+
+
+.contacto {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-top: 50px;
+    background: linear-gradient(180deg, #0000, #0005);
+    text-align: center;
+  }
+  .contacto__firma {
+    font-size: 16px;
+    margin:0%;
+  }
+  
+  .contacto__redes {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 1em 1em 2em;
+  }
+  
+  .contacto__redes--linkedin {
+    width: 50px;
+  }
+  
+  .contacto__redes--github {
+    width: 55px;
+  }
