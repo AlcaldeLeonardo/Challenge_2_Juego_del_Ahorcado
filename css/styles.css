@@ -17,9 +17,9 @@ body {
 
 .menu_principal {
   position: relative;
-  height: 80vh;
+  height: 75vh;
   overflow:hidden;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -29,12 +29,11 @@ body {
   padding: 16px 30px;
   border: 1px solid var(--Azul);
   border-radius: 20px;
-  margin: 10px;
+  margin-left: 10px;
 }
 
 .botonera__btn--azul {
   background: var(--Azul);
-  padding: 35px 80px;
 }
 .botonera__link {
   color: var(--Azul);
@@ -51,8 +50,12 @@ body {
 
 .menu_principal .botonera__btn {
   display: block;
-  margin: 20px auto;
+  margin: 35px auto;
 
+}
+
+.menu_principal .botonera__btn--azul {
+  padding: 35px 80px;
 }
 
 
