@@ -21,17 +21,67 @@
         <div class="menu_principal">
           <div class="botonera">
             <button class="botonera__btn botonera__btn--azul">
-                <a class="botonera__link" href="html/juego.html">Nuevo Juego</a>
+                <a class="botonera__link" id="btnNuevoJuego">Nuevo Juego</a>
             </button>
             <button class="botonera__btn">
-                <a class="botonera__link" href="html/nueva_palabra.html">Agregar Nueva Palabra</a>
+                <a class="botonera__link" id="btnAgregarNuevaPalabra">Agregar Nueva Palabra</a>
             </button>
           </div>
         </div>
 
+        <div class="areaDeJuego">
+            
+          <div class="imagen">
+              <img src="../img/img7.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
+          </div>
+  
+          <div class="adivinadas">
+              <span>A</span>         
+              <span></span>         
+              <span>U</span>        
+              <span></span>
+              <span>A</span>
+          </div>
+          <div class="erradas">
+              <span>E</span>
+              <span>Q</span>
+              <span>W</span>
+          </div>
+  
+          <div class="botonera">
+              <button class="botonera__btn botonera__btn--azul">
+                  <a class="botonera__link" id="btnRecargaAreaJuego">Nuevo Juego</a>
+              </button>
+              <button class="botonera__btn">
+                  <a class="botonera__link" id="btnDesistir">Desistir</a>
+              </button>
+          </div>
+
+      </div>
+
+      <div class="menu_palabra_nueva">
+        <div class="menu_palabra_nueva__lienzoTexto">
+          <textarea name="palabraNueva" id="" class="menu_palabra_nueva__textarea" placeholder="Ingresa palabra nueva"></textarea>
+        </div>
+
+        
+        <div class="botonera">
+
+          <img class="advertencia__img" src="img/Vectorexclamacion.png" alt="">
+          <p class="advertencia__p">Max. 8 caracteres</p>
+          
+          <button class="botonera__btn botonera__btn--azul">
+              <a class="botonera__link" id = "btnGuardarPalabra">Guardar y Empezar</a>
+          </button>
+          <button class="botonera__btn">
+              <a class="botonera__link" id = "btnCancelar">Cancelar</a>
+          </button>
+        </div>
+      </div>
+
     </main>
     <footer class="contacto">
-        <p class="contacto__firma">Hecho por Leonardo Esteban Alcalde Gómez en ONE-Chalenge 1</p>
+        <p class="contacto__firma">Hecho por Leonardo Esteban Alcalde Gómez en ONE-Chalenge 2</p>
         <p class="contacto__redes">
           <a
             href="https://www.linkedin.com/in/leonardo-esteban-alcalde-gomez-dvpfs/"
@@ -51,5 +101,6 @@
           /></a>
         </p>
       </footer>
+      <script src="scripts/motor_de_juego.js"></script>
 </body>
 </html>
