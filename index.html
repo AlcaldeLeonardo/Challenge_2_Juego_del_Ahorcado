@@ -14,14 +14,14 @@
 </head>
 <body>
     <main class="main">
-        <div class="header">
+        <div class="header" id="header">
             <img src="img/Vectorlogo.png" alt="" class="header__logo">
         </div>
 
         <div class="menu_principal">
           <div class="botonera">
             <button class="botonera__btn botonera__btn--azul">
-                <a class="botonera__link" id="btnNuevoJuego">Nuevo Juego</a>
+                <a href = "#header" class="botonera__link" id="btnNuevoJuego">Nuevo Juego</a>
             </button>
             <button class="botonera__btn">
                 <a class="botonera__link" id="btnAgregarNuevaPalabra">Agregar Nueva Palabra</a>
@@ -32,20 +32,12 @@
         <div class="areaDeJuego">
             
           <div class="imagen">
-              <img src="../img/img7.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
+              <img id="ahorcado" src="img/img.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
           </div>
   
           <div class="adivinadas">
-              <span>A</span>         
-              <span></span>         
-              <span>U</span>        
-              <span></span>
-              <span>A</span>
           </div>
           <div class="erradas">
-              <span>E</span>
-              <span>Q</span>
-              <span>W</span>
           </div>
   
           <div class="botonera">
@@ -53,7 +45,7 @@
                   <a class="botonera__link" id="btnRecargaAreaJuego">Nuevo Juego</a>
               </button>
               <button class="botonera__btn">
-                  <a class="botonera__link" id="btnDesistir">Desistir</a>
+                  <a href = "#header" class="botonera__link btnCancelar" id="btnDesistir">Desistir</a>
               </button>
           </div>
 
@@ -73,8 +65,8 @@
           <button class="botonera__btn botonera__btn--azul">
               <a class="botonera__link" id = "btnGuardarPalabra">Guardar y Empezar</a>
           </button>
-          <button class="botonera__btn">
-              <a class="botonera__link" id = "btnCancelar">Cancelar</a>
+          <button class="botonera__btn  btnCancelar" id = "btnCancelar">
+              <a class="botonera__link">Cancelar</a>
           </button>
         </div>
       </div>
@@ -101,6 +93,7 @@
           /></a>
         </p>
       </footer>
+      <span></span>
       <script src="scripts/motor_de_juego.js"></script>
 </body>
 </html>

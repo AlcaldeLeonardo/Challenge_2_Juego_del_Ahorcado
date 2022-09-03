@@ -85,7 +85,7 @@ body {
   text-align: center;
 }
 
-.adivinadas span {
+.adivinadas__letra {
   display: inline-block;
   border-bottom: 3px solid var(--Azul);
   width: 55px;
@@ -100,7 +100,7 @@ body {
   text-align: center;
 }
 
-.erradas span {
+.erradas__letra {
   display: inline-block;
   width: 25px;
   height: 25px;
