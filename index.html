@@ -20,11 +20,11 @@
 
         <div class="menu_principal">
           <div class="botonera">
-            <button class="botonera__btn botonera__btn--azul">
-                <a href = "#header" class="botonera__link" id="btnNuevoJuego">Nuevo Juego</a>
+            <button id="btnNuevoJuego" class="botonera__btn botonera__btn--azul">
+                <a href = "#header" class="botonera__link">Nuevo Juego</a>
             </button>
-            <button class="botonera__btn">
-                <a class="botonera__link" id="btnAgregarNuevaPalabra">Agregar Nueva Palabra</a>
+            <button id="btnAgregarNuevaPalabra" class="botonera__btn">
+                <a class="botonera__link">Agregar Nueva Palabra</a>
             </button>
           </div>
         </div>
@@ -32,7 +32,7 @@
         <div class="areaDeJuego">
             
           <div class="imagen">
-              <img id="ahorcado" src="img/img.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
+              <img id="ahorcado" src="img/img0.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
           </div>
   
           <div class="adivinadas">
@@ -41,11 +41,11 @@
           </div>
   
           <div class="botonera">
-              <button class="botonera__btn botonera__btn--azul">
-                  <a class="botonera__link" id="btnRecargaAreaJuego">Nuevo Juego</a>
+              <button id="btnRecargaAreaJuego" class="botonera__btn botonera__btn--azul">
+                  <a class="botonera__link" >Nuevo Juego</a>
               </button>
-              <button class="botonera__btn">
-                  <a href = "#header" class="botonera__link btnCancelar" id="btnDesistir">Desistir</a>
+              <button id="btnDesistir" class="botonera__btn">
+                  <a href = "#header" class="botonera__link btnCancelar">Desistir</a>
               </button>
           </div>
 
@@ -53,7 +53,7 @@
 
       <div class="menu_palabra_nueva">
         <div class="menu_palabra_nueva__lienzoTexto">
-          <textarea name="palabraNueva" id="" class="menu_palabra_nueva__textarea" placeholder="Ingresa palabra nueva"></textarea>
+          <textarea maxlength="8" name="palabraNueva" id="palabraNueva" class="menu_palabra_nueva__textarea" placeholder="Ingresa palabra nueva"></textarea>
         </div>
 
         
@@ -62,8 +62,8 @@
           <img class="advertencia__img" src="img/Vectorexclamacion.png" alt="">
           <p class="advertencia__p">Max. 8 caracteres</p>
           
-          <button class="botonera__btn botonera__btn--azul">
-              <a class="botonera__link" id = "btnGuardarPalabra">Guardar y Empezar</a>
+          <button id = "btnGuardarPalabra" class="botonera__btn botonera__btn--azul">
+              <a class="botonera__link" >Guardar y Empezar</a>
           </button>
           <button class="botonera__btn  btnCancelar" id = "btnCancelar">
               <a class="botonera__link">Cancelar</a>

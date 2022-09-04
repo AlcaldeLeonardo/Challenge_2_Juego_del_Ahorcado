@@ -29,6 +29,7 @@ body {
   border: 1px solid var(--Azul);
   border-radius: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .botonera__btn--azul {
@@ -69,7 +70,7 @@ body {
 /*Ajustes area de juego*/
 
 .areaDeJuego {
-  height: 800px;
+  height: 550px;
 }
 
 .imagen {
