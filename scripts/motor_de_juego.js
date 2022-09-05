@@ -22,6 +22,7 @@ const $ahorcado = document.querySelector("#ahorcado");
 const $adivinadas = document.querySelector(".adivinadas");
 const $erradas = document.querySelector(".erradas");
 const $finJuegoMens = document.querySelector("#finDeJuego");
+const $logo = document.querySelector(".header__logo");
 
 /*CAPTURA DE LOS BOTONES NECESARIOS*/
 
@@ -211,4 +212,5 @@ $btnRecargaAreaJuego.addEventListener('click', iniciarJuego);
 $btnNuevaPalabra.addEventListener('click', IrNuevaPalabra);
 $btnCancelar.addEventListener(`click`, IrMenuPrincipal);
 $btnDesistir.addEventListener(`click`, IrMenuPrincipal);
+$logo.addEventListener(`click`, IrMenuPrincipal);
 $btnGuardarPalabra.addEventListener(`click`, guardarPalabra)
