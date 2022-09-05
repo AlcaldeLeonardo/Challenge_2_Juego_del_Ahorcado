@@ -52,7 +52,7 @@ function iniciarJuego() {
     erradas = [];
     estado = 0;
     palabra = listaPalabras[sorteo(listaPalabras.length)]
-    console.log(palabra)
+
 
     window.addEventListener(`keypress`, captuarComprobar);
 
@@ -107,7 +107,7 @@ function Graficar() {
         if (adivinadas.indexOf(letra) >= 0) {
             $texto.nodeValue = letra;
             contadorAciertos++;
-            console.log(contadorAciertos);
+
         }
         $span.setAttribute(`class`, `adivinadas__letra`);
         $span.appendChild($texto)
@@ -148,18 +148,17 @@ function captuarComprobar(teclaPresionada) {
         if (estado < 7 && contadorAciertos < temp) {
 
             if (palabra.indexOf(tecla) >= 0) {
-                console.log("La letra es correcta");
+
                 if (adivinadas.indexOf(tecla) < 0) {
                     adivinadaAudio.play();
                     adivinadas.push(tecla);
-                    console.log(adivinadas);
+
                 }
             } else {
-                console.log("La letra es errada");
                 if (erradas.indexOf(tecla) < 0) {
                     erradaAudio.play();
                     erradas.push(tecla);
-                    console.log(erradas);
+
                     estado++;
                 }
             }
@@ -181,9 +180,9 @@ function guardarPalabra() {
     if (resultado != "") {
         for (let i = 0; i < resultado.length; i++) {
             if ((resultado.charCodeAt(i) >= 65 && resultado.charCodeAt(i) <= 90) || (resultado.charCodeAt(i) >= 97 && resultado.charCodeAt(i) <= 122) || (resultado.charCodeAt(i) == 209) || (resultado.charCodeAt(i) == 241)) {
-                console.log(resultado[i] + " coincide")
+
             } else {
-                console.log(resultado[i] + " codigo " + resultado.charCodeAt(i) + " no coincide")
+
                 alert("SOLO LETRAS. Numeros, caracteres especiales o acentos no son permitidos");
                 palabraValida = false;
                 break;
@@ -199,7 +198,7 @@ function guardarPalabra() {
 
         }
     } else alert("no hay palabra para guardar");
-    console.log(listaPalabras);
+
 }
 
 
@@ -213,5 +212,3 @@ $btnNuevaPalabra.addEventListener('click', IrNuevaPalabra);
 $btnCancelar.addEventListener(`click`, IrMenuPrincipal);
 $btnDesistir.addEventListener(`click`, IrMenuPrincipal);
 $btnGuardarPalabra.addEventListener(`click`, guardarPalabra)
-
-console.log(listaPalabras)
