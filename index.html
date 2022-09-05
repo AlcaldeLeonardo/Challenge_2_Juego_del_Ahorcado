@@ -1,99 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge 2 Oracle Next Education</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="img/Icono.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="shortcut icon" href="img/Icono.png" type="image/x-icon" />
+  </head>
+  <body>
     <main class="main">
-        <div class="header" id="header">
-            <img src="img/Vectorlogo.png" alt="" class="header__logo">
+      <div class="header" id="header">
+        <img src="img/Vectorlogo.png" alt="" class="header__logo" />
+      </div>
+
+      <div class="menu_principal">
+        <div class="botonera">
+          <button id="btnNuevoJuego" class="botonera__btn botonera__btn--azul">
+            <a href="#header" class="botonera__link">Nuevo Juego</a>
+          </button>
+          <button id="btnAgregarNuevaPalabra" class="botonera__btn">
+            <a class="botonera__link">Agregar Nueva Palabra</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="areaDeJuego">
+        <p class="areaDeJuego__mensajeFin" id="finDeJuego">
+          FELICIDADES!! GANASTE
+        </p>
+        <div class="imagen">
+          <img
+            id="ahorcado"
+            src="img/img0.png"
+            alt="hombre ahorcado"
+            title="AIIIUDA!!!!!"
+          />
         </div>
 
-        <div class="menu_principal">
-          <div class="botonera">
-            <button id="btnNuevoJuego" class="botonera__btn botonera__btn--azul">
-                <a href = "#header" class="botonera__link">Nuevo Juego</a>
-            </button>
-            <button id="btnAgregarNuevaPalabra" class="botonera__btn">
-                <a class="botonera__link">Agregar Nueva Palabra</a>
-            </button>
-          </div>
+        <div class="adivinadas"></div>
+        <div class="erradas"></div>
+
+        <div class="botonera">
+          <button
+            id="btnRecargaAreaJuego"
+            class="botonera__btn botonera__btn--azul"
+          >
+            <a class="botonera__link">Nuevo Juego</a>
+          </button>
+          <button id="btnDesistir" class="botonera__btn">
+            <a href="#header" class="botonera__link btnCancelar">Desistir</a>
+          </button>
         </div>
-
-        <div class="areaDeJuego">
-          <p class="areaDeJuego__mensajeFin" id="finDeJuego">FELICIDADES!! GANASTE</p> 
-          <div class="imagen">
-              <img id="ahorcado" src="img/img0.png" alt="hombre ahorcado" title="AIIIUDA!!!!!">
-          </div>
-          
-          <div class="adivinadas">
-          </div>
-          <div class="erradas">
-          </div>
-  
-          <div class="botonera">
-              <button id="btnRecargaAreaJuego" class="botonera__btn botonera__btn--azul">
-                  <a class="botonera__link" >Nuevo Juego</a>
-              </button>
-              <button id="btnDesistir" class="botonera__btn">
-                  <a href = "#header" class="botonera__link btnCancelar">Desistir</a>
-              </button>
-          </div>
-
       </div>
 
       <div class="menu_palabra_nueva">
         <div class="menu_palabra_nueva__lienzoTexto">
-          <textarea maxlength="8" name="palabraNueva" id="palabraNueva" class="menu_palabra_nueva__textarea" placeholder="Ingresa palabra nueva"></textarea>
+          <textarea
+            maxlength="8"
+            name="palabraNueva"
+            id="palabraNueva"
+            class="menu_palabra_nueva__textarea"
+            placeholder="Ingresa palabra nueva"
+          ></textarea>
         </div>
 
-        
         <div class="botonera">
-
-          <img class="advertencia__img" src="img/Vectorexclamacion.png" alt="">
+          <img
+            class="advertencia__img"
+            src="img/Vectorexclamacion.png"
+            alt=""
+          />
           <p class="advertencia__p">Max. 8 caracteres</p>
-          
-          <button id = "btnGuardarPalabra" class="botonera__btn botonera__btn--azul">
-              <a class="botonera__link" >Guardar y Empezar</a>
+
+          <button
+            id="btnGuardarPalabra"
+            class="botonera__btn botonera__btn--azul"
+          >
+            <a class="botonera__link">Guardar y Empezar</a>
           </button>
-          <button class="botonera__btn  btnCancelar" id = "btnCancelar">
-              <a class="botonera__link">Cancelar</a>
+          <button class="botonera__btn btnCancelar" id="btnCancelar">
+            <a class="botonera__link">Cancelar</a>
           </button>
         </div>
       </div>
-
     </main>
     <footer class="contacto">
-        <p class="contacto__firma">Hecho por Leonardo Esteban Alcalde Gómez en ONE-Chalenge 2</p>
-        <p class="contacto__redes">
-          <a
-            href="https://www.linkedin.com/in/leonardo-esteban-alcalde-gomez-dvpfs/"
-            target="_blank"
-            ><img
-              class="contacto__redes--linkedin"
-              src="img/linkedin_logo.png"
-              alt="LinkedIn Logo"
-          /></a>
-        </p>
-        <p class="contacto__redes">
-          <a href="https://github.com/AlcaldeLeonardo" target="_blank"
-            ><img
-              class="contacto__redes--github"
-              src="img/github_logo.png"
-              alt="Github Logo"
-          /></a>
-        </p>
-      </footer>
-      <span></span>
-      <script src="scripts/motor_de_juego.js"></script>
-</body>
+      <p class="contacto__firma">
+        Hecho por Leonardo Esteban Alcalde Gómez en ONE-Chalenge 2
+      </p>
+      <p class="contacto__redes">
+        <a
+          href="https://www.linkedin.com/in/leonardo-esteban-alcalde-gomez-dvpfs/"
+          target="_blank"
+          ><img
+            class="contacto__redes--linkedin"
+            src="img/linkedin_logo.png"
+            alt="LinkedIn Logo"
+        /></a>
+      </p>
+      <p class="contacto__redes">
+        <a href="https://github.com/AlcaldeLeonardo" target="_blank"
+          ><img
+            class="contacto__redes--github"
+            src="img/github_logo.png"
+            alt="Github Logo"
+        /></a>
+      </p>
+    </footer>
+    <span></span>
+    <script src="scripts/motor_de_juego.js"></script>
+  </body>
 </html>

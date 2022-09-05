@@ -1,5 +1,5 @@
 // /*ELEMENTOS DEL JUEGO*/
-let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`,`WEB`];
+let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`, `WEB`];
 let palabra = listaPalabras[1];
 let adivinadas = [];
 let contadorAciertos = 0;
@@ -17,7 +17,7 @@ const adivinadaAudio = new Audio(`sonidos/sfx-magic14.mp3`)
 const $menuPrincipal = document.querySelector(".menu_principal");
 const $areaDeJuego = document.querySelector(".areaDeJuego");
 const $menuPalabraNueva = document.querySelector(".menu_palabra_nueva");
-const $textAreaPalabra = document.querySelector("#palabraNueva") 
+const $textAreaPalabra = document.querySelector("#palabraNueva")
 const $ahorcado = document.querySelector("#ahorcado");
 const $adivinadas = document.querySelector(".adivinadas");
 const $erradas = document.querySelector(".erradas");
@@ -34,9 +34,9 @@ const $btnRecargaAreaJuego = document.querySelector("#btnRecargaAreaJuego");
 
 /*DEFINICION DE FUNCIONES*/
 
-function sorteo(n){
-    return (Math.floor(Math.random()*n));
-  }
+function sorteo(n) {
+    return (Math.floor(Math.random() * n));
+}
 
 function iniciarJuego() {
     $menuPrincipal.style.display = "none";
@@ -123,14 +123,14 @@ function Graficar() {
         $span.setAttribute(`class`, `erradas__letra`)
         $erradas.appendChild($span);
     }
-    if(estado > 6){
+    if (estado > 6) {
         derrotaAudio.play()
 
         $finJuegoMens.innerHTML = `😖PERDISTE!😖<br>La palabra era ${palabra}`;
 
         $finJuegoMens.style.color = "red";
         $finJuegoMens.style.visibility = "visible";
-    }else if(contadorAciertos >= palabra.length){
+    } else if (contadorAciertos >= palabra.length) {
         victoriaAudio.play()
 
         $finJuegoMens.innerHTML = `FELICIDADES!!! <br>Ganaste 😎🥳`;
@@ -163,12 +163,12 @@ function captuarComprobar(teclaPresionada) {
                     estado++;
                 }
             }
-            
+
             Graficar();
-            
-        }else {
+
+        } else {
             alert("Juego terminado. Click en Nuevo Juego! o desistir para Menu Principal")
-            window,removeEventListener(`keypress`, captuarComprobar);
+            window, removeEventListener(`keypress`, captuarComprobar);
         }
     }
 }
@@ -178,27 +178,27 @@ function guardarPalabra() {
     let palabraValida = true;
 
     /*codigo que valida si la letra es valida dejando fuera los caracteres especiales y acentos*/
-    if(resultado != "") {
-        for (let i = 0; i < resultado.length;i++) {
+    if (resultado != "") {
+        for (let i = 0; i < resultado.length; i++) {
             if ((resultado.charCodeAt(i) >= 65 && resultado.charCodeAt(i) <= 90) || (resultado.charCodeAt(i) >= 97 && resultado.charCodeAt(i) <= 122) || (resultado.charCodeAt(i) == 209) || (resultado.charCodeAt(i) == 241)) {
                 console.log(resultado[i] + " coincide")
-            }else {
+            } else {
                 console.log(resultado[i] + " codigo " + resultado.charCodeAt(i) + " no coincide")
                 alert("SOLO LETRAS. Numeros, caracteres especiales o acentos no son permitidos");
                 palabraValida = false;
                 break;
-            }    
+            }
         }
         if (palabraValida) {
             $textAreaPalabra.value = "";
             resultado = resultado.toUpperCase();
             listaPalabras.push(resultado);
             alert("Palabra guardada!!");
-    
+
             iniciarJuego()
-    
+
         }
-    }else alert("no hay palabra para guardar");
+    } else alert("no hay palabra para guardar");
     console.log(listaPalabras);
 }
 
