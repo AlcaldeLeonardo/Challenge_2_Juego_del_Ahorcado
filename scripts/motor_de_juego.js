@@ -1,5 +1,5 @@
 // /*ELEMENTOS DEL JUEGO*/
-let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`, `WEB`, `IA`,`ROBOT`, `SOL`, `LUNA`, `ESPADA`, `GUITARRA`, `UKELELE`, `AZUL`, `MAR`, `PLAYA`, `RATON`, `PAIS`, `ELEFANTE`, `LEON`, `FRUTA`, `BANANA`, `LECHUGA`, `MANZANA`, `CARRO`, `AUTO`, `POESIA`, `ROMANCE`];
+let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`, `WEB`, `IA`,`ROBOT`, `SOL`, `LUNA`, `ESPADA`, `GUITARRA`, `UKELELE`, `AZUL`, `MAR`, `PLAYA`, `RATON`, `PAIS`, `ELEFANTE`, `LEON`, `FRUTA`, `BANANA`, `LECHUGA`, `MANZANA`, `CARRO`, `AUTO`, `POESIA`, `ROMANCE`, `CUADRO`, `REMOLINO`, `PLATA`, `COBRE`, `ORO`, `ROMBO`, `ELIPSE`, `CIRCULO`, `ALA`, `ALMA`, `RODAR`,`ESTRELLA`, `TELEFONO`,`ANDROID`, "IOS"];
 let palabra = listaPalabras[1];
 let adivinadas = [];
 let contadorAciertos = 0;
