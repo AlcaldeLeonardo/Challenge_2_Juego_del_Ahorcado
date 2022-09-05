@@ -144,32 +144,33 @@ function captuarComprobar(teclaPresionada) {
 
     let tecla = (teclaPresionada.key).toUpperCase();
     let temp = (palabra.length);
-    if (estado < 7 && contadorAciertos < temp) {
+    if (((teclaPresionada.key).charCodeAt(0) >= 65 && (teclaPresionada.key).charCodeAt(0) <= 90) || ((teclaPresionada.key).charCodeAt(0) >= 97 && (teclaPresionada.key).charCodeAt(0) <= 122) || ((teclaPresionada.key).charCodeAt(0) == 209) || ((teclaPresionada.key).charCodeAt(0) == 241)) {
+        if (estado < 7 && contadorAciertos < temp) {
 
-        if (palabra.indexOf(tecla) >= 0) {
-            console.log("La letra es correcta");
-            if (adivinadas.indexOf(tecla) < 0) {
-                adivinadaAudio.play();
-                adivinadas.push(tecla);
-                console.log(adivinadas);
+            if (palabra.indexOf(tecla) >= 0) {
+                console.log("La letra es correcta");
+                if (adivinadas.indexOf(tecla) < 0) {
+                    adivinadaAudio.play();
+                    adivinadas.push(tecla);
+                    console.log(adivinadas);
+                }
+            } else {
+                console.log("La letra es errada");
+                if (erradas.indexOf(tecla) < 0) {
+                    erradaAudio.play();
+                    erradas.push(tecla);
+                    console.log(erradas);
+                    estado++;
+                }
             }
-        } else {
-            console.log("La letra es errada");
-            if (erradas.indexOf(tecla) < 0) {
-                erradaAudio.play();
-                erradas.push(tecla);
-                console.log(erradas);
-                estado++;
-            }
+            
+            Graficar();
+            
+        }else {
+            alert("Juego terminado. Click en Nuevo Juego! o desistir para Menu Principal")
+            window,removeEventListener(`keypress`, captuarComprobar);
         }
-        
-        Graficar();
-        
-    }else {
-        alert("Juego terminado. Click en Nuevo Juego! o desistir para Menu Principal")
-        window,removeEventListener(`keypress`, captuarComprobar);
     }
-    
 }
 
 function guardarPalabra() {
