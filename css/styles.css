@@ -70,7 +70,20 @@ body {
 /*Ajustes area de juego*/
 
 .areaDeJuego {
-  height: 550px;
+  height: 650px;
+}
+
+.areaDeJuego__mensajeFin{
+  visibility: hidden;
+
+  margin-top: 0;
+  height: 50px;
+
+  color: green;
+  font-size: 24px;
+  
+  text-align: center;
+  font-weight: bold;
 }
 
 .imagen {
@@ -98,6 +111,7 @@ body {
 }
 
 .erradas {
+  height: 50px;
   text-align: center;
 }
 

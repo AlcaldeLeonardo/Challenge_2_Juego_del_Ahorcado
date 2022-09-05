@@ -21,6 +21,7 @@ const $textAreaPalabra = document.querySelector("#palabraNueva")
 const $ahorcado = document.querySelector("#ahorcado");
 const $adivinadas = document.querySelector(".adivinadas");
 const $erradas = document.querySelector(".erradas");
+const $finJuegoMens = document.querySelector("#finDeJuego");
 
 /*CAPTURA DE LOS BOTONES NECESARIOS*/
 
@@ -41,6 +42,7 @@ function iniciarJuego() {
     $menuPrincipal.style.display = "none";
     $areaDeJuego.style.display = "block";
     $menuPalabraNueva.style.display = "none";
+    $finJuegoMens.style.visibility = "hidden";
 
     const audioInicio = new Audio(`sonidos/sfx-magic4.mp3`)
     audioInicio.play()
@@ -123,10 +125,17 @@ function Graficar() {
     }
     if(estado > 6){
         derrotaAudio.play()
-        alert("perdiste")
+
+        $finJuegoMens.innerHTML = `😖PERDISTE!😖<br>La palabra era ${palabra}`;
+
+        $finJuegoMens.style.color = "red";
+        $finJuegoMens.style.visibility = "visible";
     }else if(contadorAciertos >= palabra.length){
         victoriaAudio.play()
-        alert("ganaste")
+
+        $finJuegoMens.innerHTML = `FELICIDADES!!! <br>Ganaste 😎🥳`;
+        $finJuegoMens.style.color = "green";
+        $finJuegoMens.style.visibility = "visible";
     }
 }
 
