@@ -23,7 +23,6 @@ const $adivinadas = document.querySelector(".adivinadas");
 const $erradas = document.querySelector(".erradas");
 const $finJuegoMens = document.querySelector("#finDeJuego");
 const $logo = document.querySelector(".header__logo");
-const $virtual = document.querySelector("#virtual");
 
 /*CAPTURA DE LOS BOTONES NECESARIOS*/
 
@@ -33,7 +32,6 @@ const $btnGuardarPalabra = document.querySelector("#btnGuardarPalabra")
 const $btnDesistir = document.querySelector("#btnDesistir");
 const $btnCancelar = document.querySelector("#btnCancelar");
 const $btnRecargaAreaJuego = document.querySelector("#btnRecargaAreaJuego");
-const $btnTeclado = document.querySelector("#teclado");
 
 /*DEFINICION DE FUNCIONES*/
 
@@ -209,10 +207,6 @@ function guardarPalabra() {
         }
     } else alert("no hay palabra para guardar");
 
-}
-
-function seleccionarTeclado() {
-    $virtual.select();
 }
 
 
