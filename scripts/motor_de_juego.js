@@ -1,5 +1,5 @@
 // /*ELEMENTOS DEL JUEGO*/
-let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`, `WEB`, `IA`,`ROBOT`, `SOL`, `LUNA`, `ESPADA`, `GUITARRA`, `UKELELE`, `AZUL`, `MAR`, `PLAYA`, `RATON`, `PAIS`, `ELEFANTE`, `LEON`, `FRUTA`, `BANANA`, `LECHUGA`, `MANZANA`, `CARRO`, `AUTO`, `POESIA`, `ROMANCE`, `CUADRO`, `REMOLINO`, `PLATA`, `COBRE`, `ORO`, `ROMBO`, `ELIPSE`, `CIRCULO`, `ALA`, `ALMA`, `RODAR`,`ESTRELLA`, `TELEFONO`,`ANDROID`, "IOS"];
+let listaPalabras = [`ALURA`, `PYTHON`, `HTML`, `DOMINIO`, `JAVA`, `WEB`, `IA`,`ROBOT`, `SOL`, `LUNA`, `ESPADA`, `GUITARRA`, `UKELELE`, `AZUL`, `MAR`, `PLAYA`, `RATON`, `PAIS`, `ELEFANTE`, `LEON`, `FRUTA`, `BANANA`, `LECHUGA`, `MANZANA`, `CARRO`, `AUTO`, `POESIA`, `ROMANCE`, `CUADRO`, `REMOLINO`, `PLATA`, `COBRE`, `ORO`, `ROMBO`, `ELIPSE`, `CIRCULO`, `ALA`, `ALMA`, `RODAR`,`ESTRELLA`, `TELEFONO`,`ANDROID`, "IOS", `CAJA`, `ARMA`, `ARMARIO`, `UVA`, `VENENO`, `POCION`, `ROMERO`, `RAMA`, `RODAR`];
 let palabra = listaPalabras[1];
 let adivinadas = [];
 let contadorAciertos = 0;
@@ -134,7 +134,7 @@ function Graficar() {
     } else if (contadorAciertos >= palabra.length) {
         victoriaAudio.play()
 
-        $finJuegoMens.innerHTML = `FELICIDADES!!! <br>Ganaste 😎🥳`;
+        $finJuegoMens.innerHTML = `FELICIDADES!!! <br>🥳 GANASTE 🥳`;
         $finJuegoMens.style.color = "green";
         $finJuegoMens.style.visibility = "visible";
     }
