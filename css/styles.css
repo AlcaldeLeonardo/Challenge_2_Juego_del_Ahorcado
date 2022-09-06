@@ -23,6 +23,7 @@ body {
 }
 
 .botonera__btn {
+  color:#f3f5fc;
   background: none;
   padding: 16px 30px;
   border: 1px solid var(--Azul);
@@ -34,6 +35,16 @@ body {
 .botonera__btn--azul {
   background: var(--Azul);
 }
+
+.btn__teclado{
+  display: block;
+  margin: 20px auto;
+}
+
+.selectorTeclado {
+  visibility: hidden;
+}
+
 .botonera__link {
   color: var(--Azul);
   text-decoration: none;
