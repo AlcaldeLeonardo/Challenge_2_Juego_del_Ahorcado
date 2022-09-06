@@ -189,6 +189,13 @@ function guardarPalabra() {
                 break;
             }
         }
+        for(let supuesta of listaPalabras) {
+            if(resultado.toUpperCase() == supuesta) {
+                palabraValida = false;
+                alert("Palabra ya existe");
+                break;
+            }
+        }
         if (palabraValida) {
             $textAreaPalabra.value = "";
             resultado = resultado.toUpperCase();
