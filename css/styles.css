@@ -42,7 +42,9 @@ body {
 }
 
 .selectorTeclado {
-  visibility: hidden;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .botonera__link {
