@@ -62,7 +62,7 @@ function iniciarJuego() {
 
 function IrNuevaPalabra() {
     transicion.play();
-    window.removeEventListener(`keypress`, captuarComprobar);
+    window.removeEventListener(`keyup`, captuarComprobar);
 
     $menuPrincipal.style.display = "none";
     $areaDeJuego.style.display = "none";
@@ -71,7 +71,7 @@ function IrNuevaPalabra() {
 
 function IrMenuPrincipal() {
     transicion.play();
-    window.removeEventListener(`keypress`, captuarComprobar);
+    window.removeEventListener(`keyup`, captuarComprobar);
 
     $menuPrincipal.style.display = "block";
     $areaDeJuego.style.display = "none";
@@ -168,7 +168,7 @@ function captuarComprobar(teclaPresionada) {
 
         } else {
             alert("Juego terminado. Click en Nuevo Juego! o desistir para Menu Principal")
-            window, removeEventListener(`keypress`, captuarComprobar);
+            window, removeEventListener(`keyup`, captuarComprobar);
         }
     }
 }
