@@ -55,7 +55,7 @@ function iniciarJuego() {
     palabra = listaPalabras[sorteo(listaPalabras.length)]
 
 
-    window.addEventListener(`keypress`, captuarComprobar);
+    window.addEventListener(`keyup`, captuarComprobar);
 
     Graficar()
 }
