@@ -181,7 +181,7 @@ function guardarPalabra() {
     if (resultado != "") {
         for (let i = 0; i < resultado.length; i++) {
             if ((resultado.charCodeAt(i) >= 65 && resultado.charCodeAt(i) <= 90) || (resultado.charCodeAt(i) >= 97 && resultado.charCodeAt(i) <= 122) || (resultado.charCodeAt(i) == 209) || (resultado.charCodeAt(i) == 241)) {
-
+    /*no hace nada porque la palabra valida sigue siendo true*/
             } else {
 
                 alert("SOLO LETRAS. Numeros, caracteres especiales o acentos no son permitidos");
@@ -208,6 +208,9 @@ function guardarPalabra() {
     } else alert("no hay palabra para guardar");
 
 }
+
+
+
 
 
 
